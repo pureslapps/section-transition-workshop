@@ -3,13 +3,6 @@
   height: 800px;
 }
 
-div.image1{
-  content:url(https://oyster.ignimgs.com/mediawiki/apis.ign.com/mortal-kombat-11/c/c4/Noob.jpg?width=640)
-}
-
-div.paragraph1{
-}
-
 .section2{
   background-color: blue;
   height: 800px;
@@ -20,14 +13,40 @@ div.paragraph1{
   height: 800px;
 }
 
-div.image2{
-  content:url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Zoe_Saldana_by_Gage_Skidmore_2.jpg/220px-Zoe_Saldana_by_Gage_Skidmore_2.jpg)
-}
-
-div.paragraph2{
-}
-
 .section4{
   background-color: orange;
   height: 800px;
+}
+
+.image1{
+  float: right;
+}
+
+.image2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image3{
+  float: right;
+}
+
+.hidden{
+  opacity: 0;
+}
+
+@keyframes showing {
+
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}
+
+.show  {
+  animation-name: showing;
+  animation-duration: 600ms;
 }
